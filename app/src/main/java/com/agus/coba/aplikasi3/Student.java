@@ -63,8 +63,12 @@ public class Student {
 
     public static ArrayList<Student> getStudents(){
         ArrayList<Student> studentArrayList = new ArrayList<Student>();
-        studentArrayList.add(new Student(1,"3145136188","TRI FEBRIANA SIAMI","0858xxxxxx","tri@mhs.unj.ac.id"));
-        studentArrayList.add(new Student(2,"3145136192","Ummu Kultsum","0813xxxxxx","ummu@mhs.unj.ac.id"));
+        studentArrayList.add(new Student(1,"1111111","Alfredo","0812323211","alfr@gmail.com"));
+        studentArrayList.add(new Student(2,"2222222","Bena Yonki","08567712890","bena@gmail.com"));
+        studentArrayList.add(new Student(3,"3333333","Cerry","08567712890","cerry@gmail.com"));
+        studentArrayList.add(new Student(4,"4444444","Dondot","08567712890","Dondot@gmail.com"));
+        studentArrayList.add(new Student(5,"5555555","Enau","08567712890","Enau@gmail.com"));
+
         return studentArrayList;
     }
 
