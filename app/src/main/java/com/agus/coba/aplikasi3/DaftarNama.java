@@ -55,8 +55,7 @@ public class DaftarNama extends AppCompatActivity{
         setContentView(R.layout.list_view);
         emptyView = (TextView)findViewById(R.id.empty);
         listView1 = (ListView)findViewById(R.id.Listview1);
-        studentadapter = new StudentAdapter(this, studentList.getList());
-        listView1.setAdapter(studentadapter);
+
 
 
     }

@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#001244"
+
     >
 <Button
     android:layout_width="match_parent"
@@ -23,6 +23,10 @@
         android:id="@+id/dosen"
         android:onClick="klikDosen"
         android:text="DOSEN"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/unj"></LinearLayout>
 
 
 </LinearLayout>
