@@ -28,17 +28,33 @@ public class MainActivity extends AppCompatActivity {
 
         Button button1=(Button)findViewById(R.id.mahasiswa);
 
+        Button button2=(Button)findViewById(R.id.dosen);
 
 
         button1.setOnClickListener(new View.OnClickListener() {
 
 
 
-            public void onClick(View arg0) {
-
-                // TODO Auto-generated method stub
+            public void onClick(View v) {
 
                 Intent i =new Intent(getApplicationContext(),StudentActivity.class);
+
+                startActivity(i);
+
+
+
+            }
+
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+
+
+
+            public void onClick(View v) {
+
+
+                Intent i =new Intent(getApplicationContext(),TeacherActivity.class);
 
                 startActivity(i);
 
