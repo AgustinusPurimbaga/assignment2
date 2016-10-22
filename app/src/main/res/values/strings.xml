@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Aplikasi3</string>
+    <string name="title_activity_student_add">Student_add</string>
 </resources>

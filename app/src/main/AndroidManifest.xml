@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Assignment 2"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -15,8 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DaftarNama"></activity>
-        <activity android:name=".AddStudent"></activity>
+        <activity android:name=".StudentActivity"/>
+        <activity android:name=".AddStudent"/>
+        <activity android:name=".Edit_student"/>
     </application>
 
 </manifest>

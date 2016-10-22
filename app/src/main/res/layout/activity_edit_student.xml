@@ -19,7 +19,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editId"
+            android:id="@+id/editId2"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -38,7 +38,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editNama"
+            android:id="@+id/editNama2"
             android:layout_weight="1" />
 
 
@@ -60,7 +60,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editNim"
+            android:id="@+id/editNim2"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -80,7 +80,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editEmail"
+            android:id="@+id/editEmail2"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -98,7 +98,7 @@
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:id="@+id/editPhone"
+            android:id="@+id/editPhone2"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -114,7 +114,7 @@
             android:layout_width="80dp"
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/btnUpdate"
+            android:id="@+id/btnUpdate2"
             android:background="@drawable/ok"
             android:textSize="15sp"
             android:layout_weight="0.11"
@@ -125,7 +125,7 @@
             android:layout_width="80dp"
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
-            android:id="@+id/btnDelete"
+            android:id="@+id/btnDelete2"
             android:background="@drawable/delete"
             android:textSize="15sp"
             android:layout_weight="0.11"

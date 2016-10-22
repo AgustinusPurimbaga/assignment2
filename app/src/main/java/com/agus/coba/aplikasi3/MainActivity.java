@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // TODO Auto-generated method stub
 
-                Intent i =new Intent(getApplicationContext(),DaftarNama.class);
+                Intent i =new Intent(getApplicationContext(),StudentActivity.class);
 
                 startActivity(i);
 
