@@ -10,16 +10,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:textSize="20sp"
-            android:text="id"/>
+
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/editId2"
+            android:hint="id"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -29,16 +25,11 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:textSize="20sp"
-            android:text="Nama"/>
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/editNama2"
+            android:hint="Nama"
             android:layout_weight="1" />
 
 
@@ -49,18 +40,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:textSize="20sp"
-            android:text="NIM"/>
 
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/editNim2"
+            android:hint="NIM"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -70,17 +55,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="Email"
-            android:textSize="20sp"
-            />
+
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/editEmail2"
+            android:hint="Alamat Email"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
@@ -89,16 +69,12 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:textSize="20sp"
-            android:text="Phone"/>
+
         <EditText
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:id="@+id/editPhone2"
+            android:hint="No Telepon"
             android:layout_weight="1" />
     </LinearLayout>
     <LinearLayout
