@@ -27,6 +27,8 @@ public class AddStudent extends AppCompatActivity {
         text3 = (EditText) findViewById(R.id.editNama);
         text4 = (EditText) findViewById(R.id.editEmail);
         text5 = (EditText) findViewById(R.id.editPhone);
+        int auto = StudentList.size()+1;
+        text1.setText(String.valueOf(auto));
         Save = (Button)findViewById(R.id.btnUpdate);
         cancel = (Button)findViewById(R.id.btnDelete);
         Intent i = getIntent();
@@ -47,12 +49,11 @@ public class AddStudent extends AppCompatActivity {
 
     public void Save(){
 
-        int getInput1 = Integer.parseInt(text1.getText().toString());
         String getInput2 = text2.getText().toString();
         String getInput3 = text3.getText().toString();
         String getInput4 = text4.getText().toString();
         String getInput5 = text5.getText().toString();
-        Student student = new Student(getInput1, getInput2, getInput3, getInput4, getInput5);
+        Student student = new Student(StudentList.size()+1, getInput2, getInput3, getInput4, getInput5);
         StudentList.add(student);
         finish();
 

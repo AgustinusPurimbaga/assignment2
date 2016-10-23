@@ -85,7 +85,7 @@ public class TeacherActivity extends AppCompatActivity implements Serializable {
         if(TeacherList.size() == 0) {
             teacherAdapter = new TeacherAdapter(this, new ArrayList<Teacher>());
             listView1.setEmptyView(empty_view);
-            empty_view.setText("Teacher Not Found");
+            empty_view.setText("Lecture Not Found");
         } else {
             teacherAdapter = new TeacherAdapter(this, TeacherList);
             empty_view.setText("");
@@ -103,12 +103,7 @@ public class TeacherActivity extends AppCompatActivity implements Serializable {
 
 
     private void populateUsersList() {
-        int i = TeacherList.size();
-        TeacherList.add(new Teacher(1,"1111111","Alfredo","0812323211","alfr@gmail.com"));
-        TeacherList.add(new Teacher(2,"2222222","Bena Yonki","08567712890","bena@gmail.com"));
-        TeacherList.add(new Teacher(3,"3333333","Cerry","08567712890","cerry@gmail.com"));
-        TeacherList.add(new Teacher(4,"4444444","Dondot","08567712890","Dondot@gmail.com"));
-        TeacherList.add(new Teacher(5,"5555555","Enau","08567712890","Enau@gmail.com"));
+        TeacherList.add(new Teacher(TeacherList.size()+1,"512533***","Just Dummy","0812323211","Dummy@gmail.com"));
         teacherAdapter = new TeacherAdapter(this, TeacherList);
         listView1.setAdapter(teacherAdapter);
     }

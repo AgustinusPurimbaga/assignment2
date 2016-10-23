@@ -28,6 +28,8 @@ public class AddTeacher extends AppCompatActivity {
         text5 = (EditText) findViewById(R.id.editPhonedosen);
         Save = (Button)findViewById(R.id.btnUpdatedosen);
         cancel = (Button)findViewById(R.id.btnDeletedosen);
+        int auto = TeacherList.size()+1;
+        text1.setText(String.valueOf(auto));
         Intent i = getIntent();
         Save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,12 +48,11 @@ public class AddTeacher extends AppCompatActivity {
 
     public void Save(){
 
-        int getInput1 = Integer.parseInt(text1.getText().toString());
         String getInput2 = text2.getText().toString();
         String getInput3 = text3.getText().toString();
         String getInput4 = text4.getText().toString();
         String getInput5 = text5.getText().toString();
-        Teacher teacher = new Teacher(getInput1, getInput2, getInput3, getInput4, getInput5);
+        Teacher teacher = new Teacher(TeacherList.size()+1, getInput2, getInput3, getInput4, getInput5);
         TeacherList.add(teacher);
         finish();
 

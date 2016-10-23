@@ -78,8 +78,27 @@ public class Edit_Teacher extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_delete, menu);
+        getMenuInflater().inflate(R.menu.menu_deletedosen, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.delete_teacher:
+                for(int l = position+1; l < TeacherList.size(); l++){
+                    TeacherList.get(position+l).setId(l);
+                }
+                position = getIntent().getIntExtra("position", 0);
+                TeacherList.remove(position);
+                Toast.makeText(getApplicationContext(), "Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),StudentActivity.class);
+
+                startActivity(i);
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 

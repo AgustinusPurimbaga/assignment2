@@ -4,5 +4,5 @@
         android:title="Create dummies"
         android:showAsAction="ifRoom"/>
     <item android:id="@+id/dua"
-        android:title="Clear Student List" />
+        android:title="Clear Lectures List" />
 </menu>

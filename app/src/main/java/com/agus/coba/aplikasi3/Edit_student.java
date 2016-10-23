@@ -18,12 +18,11 @@ import java.util.ArrayList;
 public class Edit_student extends AppCompatActivity {
 
     EditText text1, text2, text3, text4, text5;
-    ArrayList<Student> StudentList;
+    static ArrayList<Student> StudentList;
     Button Save, cancel;
     private int position;
-    Student studentid;
+    Student student;
     ListView listView;
-    private static Edit_student instance = new Edit_student();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +44,6 @@ public class Edit_student extends AppCompatActivity {
         text3.setText(studentIsi.getNama());
         text4.setText(studentIsi.getMail());
         text5.setText(studentIsi.getPhone());
-        position = getIntent().getIntExtra("position", 0);
         Save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,9 +85,22 @@ public class Edit_student extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.delete_student:
+                for(int l = position+1; l < StudentList.size(); l++){
+                    StudentList.get(position+l).setId(l);
+                }
+                position = getIntent().getIntExtra("position", 0);
+                StudentList.remove(position);
+                Toast.makeText(getApplicationContext(), "Berhasil Dihapus", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(getApplicationContext(),StudentActivity.class);
+
+                startActivity(i);
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
-        return super.onOptionsItemSelected(item);
     }
+
+
 
 
 

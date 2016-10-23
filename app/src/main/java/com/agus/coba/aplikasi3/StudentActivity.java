@@ -101,14 +101,11 @@ public class StudentActivity extends AppCompatActivity  implements Serializable{
 
 
     private void populateUsersList() {
-        int i = StudentList.size();
-        StudentList.add(new Student(1,"1111111","Alfredo","0812323211","alfr@gmail.com"));
-        StudentList.add(new Student(2,"2222222","Bena Yonki","08567712890","bena@gmail.com"));
-        StudentList.add(new Student(3,"3333333","Cerry","08567712890","cerry@gmail.com"));
-        StudentList.add(new Student(4,"4444444","Dondot","08567712890","Dondot@gmail.com"));
-        StudentList.add(new Student(5,"5555555","Enau","08567712890","Enau@gmail.com"));
+        StudentList.add(new Student(StudentList.size()+1,"3135136***","Just Dummy","0812323211","dummy@gmail.com"));
         studentAdapter = new StudentAdapter(this, StudentList);
         listView1.setAdapter(studentAdapter);
     }
+
+
 
 }

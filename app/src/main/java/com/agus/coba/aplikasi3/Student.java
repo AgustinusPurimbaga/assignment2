@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * Created by user on 10/7/2016.
  */
 public class Student implements Serializable {
+    static ArrayList<Student> StudentList;
     private int id;
     private String Noreg;
     private String Nama;
@@ -21,8 +22,8 @@ public class Student implements Serializable {
         this.Phone = Phone;
     }
 
-    public int getId() {
-        return id;
+    public int getId() {return id;
+
     }
 
     public void setId(int id) {
@@ -60,7 +61,6 @@ public class Student implements Serializable {
     public void setPhone(String phone) {
         Phone = phone;
     }
-
 
 
 }
