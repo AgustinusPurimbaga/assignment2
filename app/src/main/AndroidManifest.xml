@@ -4,8 +4,8 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="Assignment 2"
+        android:icon="@mipmap/logo"
+        android:label="Profile Data"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -15,11 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StudentActivity" />
-        <activity android:name=".AddStudent" />
-        <activity android:name=".Edit_student" />
-        <activity android:name=".AddTeacher" />
-        <activity android:name=".Edit_Teacher"></activity>
+        <activity android:name=".StudentActivity" android:label="Daftar Mahasiswa" />
+        <activity android:name=".AddStudent" android:label="Tambah Data Mahasiswa"/>
+        <activity android:name=".TeacherActivity" android:label="Daftar Dosen"/>
+        <activity android:name=".Edit_student" android:label="Edit Data Mahasiswa"/>
+        <activity android:name=".AddTeacher" android:label="Tambah Data Dosen"/>
+        <activity android:name=".Edit_Teacher" android:label="Edit Data Dosen"></activity>
     </application>
 
 </manifest>

@@ -21,13 +21,13 @@ public class AddTeacher extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_teacher);
         TeacherList = TeacherActivity.TeacherList;
-        text1 = (EditText) findViewById(R.id.editId);
-        text2 = (EditText) findViewById(R.id.editNim);
-        text3 = (EditText) findViewById(R.id.editNama);
-        text4 = (EditText) findViewById(R.id.editEmail);
-        text5 = (EditText) findViewById(R.id.editPhone);
-        Save = (Button)findViewById(R.id.btnUpdate);
-        cancel = (Button)findViewById(R.id.btnDelete);
+        text1 = (EditText) findViewById(R.id.editIddosen);
+        text2 = (EditText) findViewById(R.id.editNipdosen);
+        text3 = (EditText) findViewById(R.id.editNamadosen);
+        text4 = (EditText) findViewById(R.id.editEmaildosen);
+        text5 = (EditText) findViewById(R.id.editPhonedosen);
+        Save = (Button)findViewById(R.id.btnUpdatedosen);
+        cancel = (Button)findViewById(R.id.btnDeletedosen);
         Intent i = getIntent();
         Save.setOnClickListener(new View.OnClickListener() {
             @Override

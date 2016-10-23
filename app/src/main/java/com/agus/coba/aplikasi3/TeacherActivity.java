@@ -18,7 +18,6 @@ import java.util.ArrayList;
  * Created by user on 10/22/2016.
  */
 public class TeacherActivity extends AppCompatActivity implements Serializable {
-    private TextView emptyView;
     ListView listView1;
     static ArrayList<Teacher> TeacherList;
     TeacherAdapter teacherAdapter;
@@ -60,12 +59,11 @@ public class TeacherActivity extends AppCompatActivity implements Serializable {
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_view2);
-        emptyView = (TextView)findViewById(R.id.empty);
-        listView1 = (ListView)findViewById(R.id.Listview1);
+        listView1 = (ListView)findViewById(R.id.ListviewDOSEN);
 
         if (TeacherList == null) TeacherList = new ArrayList<Teacher>();
         teacherAdapter = new TeacherAdapter(this, TeacherList);
-        listView1 = (ListView) findViewById(R.id.Listview1);
+        listView1 = (ListView) findViewById(R.id.ListviewDOSEN);
 
 
         listView1.setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -21,14 +21,14 @@ public class TeacherAdapter extends ArrayAdapter<Teacher> {
         if (convertView == null){
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.teacher_instance, parent, false);
         }
-        TextView tvId = (TextView) convertView.findViewById(R.id.tvid);
-        TextView tvNama = (TextView) convertView.findViewById(R.id.tvnama);
-        TextView tvNoreg = (TextView) convertView.findViewById(R.id.tvnoreg);
-        TextView tvMail = (TextView) convertView.findViewById(R.id.tvmail);
-        TextView tvPhone = (TextView) convertView.findViewById(R.id.tvphone);
+        TextView tvId = (TextView) convertView.findViewById(R.id.tviddosen);
+        TextView tvNama = (TextView) convertView.findViewById(R.id.tvnamadosen);
+        TextView tvNip = (TextView) convertView.findViewById(R.id.tvnipdosen);
+        TextView tvMail = (TextView) convertView.findViewById(R.id.tvmaildosen);
+        TextView tvPhone = (TextView) convertView.findViewById(R.id.tvphonedosen);
         tvId.setText(teacher.getId()+ "");
         tvNama.setText(teacher.getNama());
-        tvNoreg.setText(teacher.getNip());
+        tvNip.setText(teacher.getNip());
         tvMail.setText(teacher.getMail());
         tvPhone.setText(teacher.getPhone());
         return convertView;

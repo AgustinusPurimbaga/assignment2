@@ -30,14 +30,13 @@ public class Edit_Teacher extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit__teacher);
         TeacherList = TeacherActivity.TeacherList;
-        text1 = (EditText) findViewById(R.id.editId2);
-        text2 = (EditText) findViewById(R.id.editNim2);
-        text3 = (EditText) findViewById(R.id.editNama2);
-        text4 = (EditText) findViewById(R.id.editEmail2);
-        text5 = (EditText) findViewById(R.id.editPhone2);
-        Save = (Button)findViewById(R.id.btnUpdate2);
-        listView = (ListView) findViewById(R.id.Listview1);
-        cancel = (Button)findViewById(R.id.btnDelete2);
+        text1 = (EditText) findViewById(R.id.editId2dosen);
+        text2 = (EditText) findViewById(R.id.editNip2dosen);
+        text3 = (EditText) findViewById(R.id.editNama2dosen);
+        text4 = (EditText) findViewById(R.id.editEmail2dosen);
+        text5 = (EditText) findViewById(R.id.editPhone2dosen);
+        Save = (Button)findViewById(R.id.btnUpdate2dosen);
+        cancel = (Button)findViewById(R.id.btnDelete2dosen);
 
         Teacher teacherIsi = (Teacher) getIntent().getSerializableExtra("TeacherListItem");
         text1.setText(String.valueOf(teacherIsi.getId()));

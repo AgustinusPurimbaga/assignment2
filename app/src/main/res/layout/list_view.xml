@@ -16,7 +16,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/Listview1"
-        android:layout_gravity="center_horizontal">
+        android:background="#cc9900"
+        android:layout_gravity="center_horizontal"
+        android:cacheColorHint="#b3b300">
 
     </ListView>
 
